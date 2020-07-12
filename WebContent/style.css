@@ -1,0 +1,41 @@
+body {
+	margin: 0;	
+}
+
+.grid {
+	display: grid;
+	height: 100vh;
+	grid-gap: 10px;
+	grid-template-rows: 80px 1fr 100px;
+	grid-template-columns: 200px 1fr;
+	grid-template-areas: "header header header"
+						 "nav content content"
+						 "footer footer footer";
+}
+
+.header {
+	grid-area: header;
+	background-color: red;
+}
+
+.nav {
+	grid-area: nav;
+	background-color: blue;
+}
+
+.content {
+	grid-area: content;
+	background-color: yellow;
+}
+
+.chat {
+	grid-area: chat;
+	background-color: green;
+	width: 60%;
+	height: 80%;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: orange;
+}
